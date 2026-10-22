@@ -1,0 +1,26 @@
+How to push this repository to GitHub (one time)
+
+1. Unzip RL-microgrid-dc.zip somewhere on your Mac, for example
+   ~/Documents/Academic_Paper_2_Conf/RL-microgrid-dc
+
+2. In Terminal:
+   cd ~/Documents/Academic_Paper_2_Conf/RL-microgrid-dc
+   git remote add origin https://github.com/nichawang-vnchya/RL-microgrid-dc.git
+   git push -u origin main
+
+   If GitHub asks for a password, use a personal access token
+   (GitHub > Settings > Developer settings > Personal access tokens),
+   or install GitHub Desktop and use "Add local repository" then "Publish".
+
+   If the GitHub repository already has a README or an initial commit, use
+   git push -u origin main --force   (the local history is the complete one).
+
+3. Afterwards add the two files that could not be copied from the Mac (they are
+   hard links there): data/raw/solar/nsrdb_bangkok_2020.csv and
+   data/raw/spec/specpower_result.txt, plus results_j1_nosafety/ from the
+   Windows PC, then:
+   git add -A && git commit -m "Add raw NSRDB and SPECpower inputs, safety ablation results" && git push
+
+4. For the Zenodo DOI: on zenodo.org, link your GitHub account, switch on this
+   repository, then create a GitHub release (v1.0.0). Zenodo mints the DOI
+   automatically; paste it into the Data availability statement.
