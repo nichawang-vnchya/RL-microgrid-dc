@@ -128,13 +128,13 @@ Raw sources:
   `data/profiles_real_provenance.txt` and `src/data_prep.py`).
 - Thai utilisation: LANTA (ThaiSC) daily means, see `src/make_thai_profiles.py`.
 - Irradiance and weather: NSRDB (Himawari) Bangkok 2020, calendar-transplanted
-  to 2023. The hourly CSV (`data/raw/solar/nsrdb_bangkok_2020.csv`) is to be
-  added; download instructions are in `RUNBOOK.md` step 6.
+  to 2023. The hourly CSV is `data/raw/solar/nsrdb_bangkok_2020.csv`; download
+  instructions for other sites are in `RUNBOOK.md` step 6.
 - Price and carbon: Singapore USEP and grid emission factor 2023, CAISO price
   and carbon 2023 (`data/raw/`, `data/raw_ca/`); Thai tariff from
   `data/EN_Electricity_Tariffs_May_2023.pdf`.
 - Server power: SPECpower_ssj2008 result for Dell PowerEdge R7615
-  (`data/raw/spec/specpower_result.txt`, to be added).
+  (`data/raw/spec/specpower_result.txt`).
 
 ## Citation
 
