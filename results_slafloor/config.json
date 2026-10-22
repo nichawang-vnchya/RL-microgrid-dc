@@ -1,0 +1,13 @@
+{
+  "norm": {
+    "cost": 4143.989933982769,
+    "carbon": 7098.650741579236,
+    "sla": 3.9600051633414606,
+    "thermal": 96.0
+  },
+  "steps": 300000,
+  "seeds": 5,
+  "train_days": 240,
+  "test_days": 60,
+  "profiles": "../data/profiles_real.csv"
+}

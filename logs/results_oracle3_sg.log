@@ -1,0 +1,35 @@
+using real profiles: ../data/profiles_real.csv (240 d train / 60 d test, chronological)
+ep   0: milp   2566.4 replay   2568.7  B0   2673.3 gap  -3.91%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep   1: milp   2665.0 replay   2665.6  B0   2770.5 gap  -3.79%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep   2: milp   2658.4 replay   2659.0  B0   2766.1 gap  -3.87%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep   3: milp   2228.4 replay   2228.8  B0   2325.9 gap  -4.17%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep   4: milp   2164.0 replay   2164.3  B0   2262.9 gap  -4.36%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep   5: milp   2369.3 replay   2369.8  B0   2487.1 gap  -4.72%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep   6: milp   2879.6 replay   2881.5  B0   3037.9 gap  -5.15%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep   7: milp   3227.9 replay   3228.6  B0   3379.7 gap  -4.47%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep   8: milp   3103.5 replay   3104.3  B0   3400.6 gap  -8.71%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep   9: milp   2599.0 replay   2599.5  B0   2721.4 gap  -4.48%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  10: milp   3513.3 replay   3515.5  B0   3748.8 gap  -6.22%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  11: milp   3043.2 replay   3044.1  B0   3168.9 gap  -3.94%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  12: milp   3069.2 replay   3071.1  B0   3227.3 gap  -4.84%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  13: milp   3606.3 replay   3607.5  B0   3847.1 gap  -6.23%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  14: milp   3796.2 replay   3797.0  B0   4024.0 gap  -5.64%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  15: milp   5348.3 replay   5348.8  B0   6655.9 gap -19.64%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  16: milp   3840.6 replay   3842.5  B0   4174.4 gap  -7.95%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  17: milp   3908.7 replay   3910.1  B0   4275.9 gap  -8.56%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  18: milp   3351.3 replay   3353.1  B0   3654.1 gap  -8.24%  t_sup 23.7 C  sla 0.000 therm 0.000
+ep  19: milp   2779.6 replay   2781.7  B0   2933.2 gap  -5.16%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  20: milp   5693.5 replay   5702.8  B0   7554.6 gap -24.51%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  21: milp   6926.8 replay   6937.6  B0  10519.6 gap -34.05%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  22: milp   4207.1 replay   4208.0  B0   4713.5 gap -10.73%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  23: milp   3210.7 replay   3212.0  B0   3580.9 gap -10.30%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  24: milp   2701.3 replay   2701.5  B0   2815.8 gap  -4.06%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  25: milp   2624.4 replay   2625.0  B0   2733.2 gap  -3.96%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  26: milp   2491.3 replay   2493.1  B0   2597.8 gap  -4.03%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  27: milp   3121.8 replay   3123.1  B0   3423.7 gap  -8.78%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  28: milp   2998.2 replay   2999.7  B0   3160.3 gap  -5.08%  t_sup 23.6 C  sla 0.000 therm 0.000
+ep  29: milp   3671.4 replay   3672.4  B0   3948.5 gap  -6.99%  t_sup 23.6 C  sla 0.000 therm 0.000
+
+=== simulator-verified oracle, 30 days ===
+oracle vs B0: paired  -7.88% +/- 2.42   bill -10.81%
+oracle vs B6: paired  -6.45% +/- 2.23   bill  -9.00%

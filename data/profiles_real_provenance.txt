@@ -1,0 +1,7 @@
+u_demand	Azure V2 vmtable reconstruction (2,695,548 VMs, core-weighted avgcpu of live VMs, 15-min bins over 30.0 d); shape rescaled x5.78 to mean 0.55; 30 whole day(s) tiled over 35040 steps
+ghi_norm	NSRDB nsrdb_bangkok_2020.csv, native h, -> 15min mean, normalised by 1000 W/m2; calendar-transplanted 2020->2023 (leap days dropped)
+t_amb	NSRDB nsrdb_bangkok_2020.csv Temperature, hourly -> 15min interpolated; calendar-transplanted 2020->2023 (leap days dropped)
+t_wb	Stull (2011) from NSRDB nsrdb_bangkok_2020.csv Relative Humidity (same satellite record as the irradiance -- internally consistent)
+price	SG_electricity_prices_2023.csv, hourly -> 15min FORWARD-FILL (piecewise-constant settlement price), $/MWh -> $/kWh
+carbon	SG_2023_hourly.csv, hourly -> 15min FORWARD-FILL, gCO2/kWh -> kgCO2/kWh
+pv_kw	600.0 kW STC x ghi_norm x (1 - 0.004(T_amb - 25))

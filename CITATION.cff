@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the repository and the associated paper."
+title: "RL-microgrid-dc: safe reinforcement learning for data center microgrids"
+authors:
+  - family-names: Yanbenjawong
+    given-names: Vanichaya
+    affiliation: "Department of Industrial Management, National Taiwan University of Science and Technology"
+  - family-names: Tseng
+    given-names: Shih-Hsien
+    affiliation: "Department of Industrial Management, National Taiwan University of Science and Technology"
+version: 1.0.0
+date-released: 2026-10-22
+repository-code: "https://github.com/nichawang-vnchya/RL-microgrid-dc"
+license: MIT
+keywords:
+  - reinforcement learning
+  - data center
+  - microgrid
+  - demand response
+  - safe RL
+preferred-citation:
+  type: article
+  title: "Safe reinforcement learning for data center microgrids: when does a learned policy beat a rule?"
+  authors:
+    - family-names: Yanbenjawong
+      given-names: Vanichaya
+    - family-names: Tseng
+      given-names: Shih-Hsien
+  journal: "Operations Research Perspectives"
+  year: 2026
+  notes: "Submitted."

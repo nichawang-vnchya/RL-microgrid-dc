@@ -1,0 +1,38 @@
+using real profiles: ../data/profiles_th.csv (240 d train / 60 d test, chronological)
+demand charge set to 3.91 per kW of monthly peak
+demand charge paid incrementally (dense peak signal)
+IT power curve recalibrated: idle = 0.520 x nameplate (180.4 W idle, 347.0 W max)
+normalisation: {'cost': 2476.64, 'carbon': 12423.98, 'sla': 5.42, 'thermal': 96.0}
+ B0 B0 status-quo        cost=   2659.1 co2=  12583.8
+ B1 B1 greedy-solar      cost=   2641.9 co2=  11876.2
+ B2 B2 price-threshold   cost=   2641.7 co2=  12048.6
+ B3 B3 carbon-threshold  cost=   2627.4 co2=  11802.8
+ B4 B4 cooling-reset     cost=   2633.5 co2=  12452.4
+ B5 B5 MPC-4h            cost=   2677.8 co2=  12188.2
+ B6 B6 TOU-warm          cost=   2598.8 co2=  12179.6
+
+=== training R1 PPO seed 0 (300000 steps) ===
+R1 PPO seed 0: cost=   2630.8 co2=  12012.9 reward= -0.667
+
+=== training R1 PPO seed 1 (300000 steps) ===
+R1 PPO seed 1: cost=   2647.2 co2=  11977.3 reward= -0.700
+
+=== training R1 PPO seed 2 (300000 steps) ===
+R1 PPO seed 2: cost=   2640.2 co2=  11994.3 reward= -0.671
+
+=== training R1 PPO seed 3 (300000 steps) ===
+R1 PPO seed 3: cost=   2644.4 co2=  12012.2 reward= -0.675
+
+=== training R1 PPO seed 4 (300000 steps) ===
+R1 PPO seed 4: cost=   2637.0 co2=  12008.2 reward= -0.668
+
+                     cost_mean  cost_ci   co2_mean   co2_ci  cool_kwh    pue      peak    sla  therm_viol   t_max  self_cons  reward  cost_vs_B0_%  co2_vs_B0_%  cool_vs_B0_%
+controller                                                                                                                                                                   
+B0 status-quo         2659.088   95.693  12583.843  120.329  8289.219  1.416  1185.243  0.000         0.0  25.874        1.0  -0.683          0.00         0.00          0.00
+B1 greedy-solar       2641.889   97.253  11876.219  120.330  7805.955  1.398  1216.856  0.000         0.0  26.762        1.0  -0.696         -0.65        -5.62         -5.83
+B2 price-threshold    2641.719   92.682  12048.567  126.526  7803.177  1.396  1370.619  0.000         0.0  26.961        1.0  -0.708         -0.65        -4.25         -5.86
+B3 carbon-threshold   2627.374   97.436  11802.803  120.110  7659.095  1.391  1164.110  0.000         0.0  26.961        1.0  -0.720         -1.19        -6.21         -7.60
+B4 cooling-reset      2633.455   94.607  12452.351  120.818  8026.183  1.403  1194.943  0.000         0.0  26.711        1.0  -0.676         -0.96        -1.04         -3.17
+B5 MPC-4h             2677.821   96.402  12188.202  118.989  8111.934  1.407  1295.794  0.000         0.0  26.645        1.0  -0.685          0.70        -3.14         -2.14
+B6 TOU-warm           2598.829   94.435  12179.559  119.307  7699.255  1.391  1234.318  0.000         0.0  27.000        1.0  -0.704         -2.27        -3.21         -7.12
+R1 PPO                2639.917   42.676  12001.003   53.413  7752.894  1.389  1224.501  0.035         0.0  27.000        1.0  -0.676         -0.72        -4.63         -6.47

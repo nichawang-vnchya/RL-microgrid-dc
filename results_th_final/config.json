@@ -1,0 +1,21 @@
+{
+  "norm": {
+    "cost": 2476.641181098617,
+    "carbon": 12423.97696960713,
+    "sla": 5.423078546027514,
+    "thermal": 96.0
+  },
+  "steps": 300000,
+  "seeds": 5,
+  "train_days": 240,
+  "test_days": 60,
+  "profiles": "../data/profiles_th.csv",
+  "sla_floor": false,
+  "safety_layer": true,
+  "forecast_err_std": 0.15,
+  "p_idle_w": 180.44,
+  "util_mean": null,
+  "peak_charge": 3.91,
+  "dense_peak": true,
+  "terminal_backlog": true
+}

@@ -1,0 +1,39 @@
+normalisation: {'cost': 3112.45, 'carbon': 8397.25, 'sla': 3.77, 'thermal': 96.0}
+ B0 B0 status-quo        cost=   3487.5 co2=   8369.2
+ B1 B1 greedy-solar      cost=   3426.7 co2=   7761.3
+ B2 B2 price-threshold   cost=   3436.0 co2=   8128.4
+ B3 B3 carbon-threshold  cost=   3553.5 co2=   7984.9
+ B4 B4 cooling-reset     cost=   3418.3 co2=   8203.4
+ B5 B5 MPC-4h            cost=   3473.5 co2=   7928.1
+
+=== training R1 PPO seed 0 (300000 steps) ===
+R1 PPO seed 0: cost=   3420.2 co2=   7856.0 reward= -0.674
+
+=== training R2 SAC seed 0 (120000 steps) ===
+R2 SAC seed 0: cost=   3550.6 co2=   8538.4 reward= -0.711
+
+=== training R1 PPO seed 1 (300000 steps) ===
+R1 PPO seed 1: cost=   3457.4 co2=   7986.5 reward= -0.683
+
+=== training R2 SAC seed 1 (120000 steps) ===
+R2 SAC seed 1: cost=   3488.7 co2=   8449.3 reward= -0.701
+
+=== training R1 PPO seed 2 (300000 steps) ===
+R1 PPO seed 2: cost=   3427.3 co2=   7867.6 reward= -0.675
+
+=== training R2 SAC seed 2 (120000 steps) ===
+R2 SAC seed 2: cost=   3646.9 co2=   8611.6 reward= -0.728
+
+=== training preference-conditioned MORL policy ===
+wrote pareto_raw.csv (220 rows)
+
+                     cost_mean  cost_ci  co2_mean   co2_ci  cool_kwh    pue      peak  sla  therm_viol   t_max  self_cons  reward  cost_vs_B0_%  co2_vs_B0_%  cool_vs_B0_%
+controller                                                                                                                                                                
+B0 status-quo         3487.498  172.119  8369.187  214.717  6702.132  1.434  1068.105  0.0         0.0  26.048        1.0  -0.697          0.00         0.00          0.00
+B1 greedy-solar       3426.701  163.983  7761.290  203.380  6166.662  1.406  1191.458  0.0         0.0  26.833        1.0  -0.690         -1.74        -7.26         -7.99
+B2 price-threshold    3436.035  166.724  8128.432  244.297  6258.162  1.406  1354.211  0.0         0.0  26.947        1.0  -0.707         -1.48        -2.88         -6.62
+B3 carbon-threshold   3553.533  171.063  7984.949  258.013  6272.522  1.409  1349.321  0.0         0.0  26.868        1.0  -0.706          1.89        -4.59         -6.41
+B4 cooling-reset      3418.306  169.282  8203.353  213.904  6301.648  1.408  1054.400  0.0         0.0  27.000        1.0  -0.684         -1.98        -1.98         -5.98
+B5 MPC-4h             3473.487  172.694  7928.109  212.179  6298.748  1.408  1127.270  0.0         0.0  27.000        1.0  -0.685         -0.40        -5.27         -6.02
+R1 PPO                3434.987   96.874  7903.344  120.366  6166.214  1.400  1041.072  0.0         0.0  27.000        1.0  -0.677         -1.51        -5.57         -8.00
+R2 SAC                3562.091   99.421  8533.137  128.671  6270.027  1.406  1392.473  0.0         0.0  27.000        1.0  -0.714          2.14         1.96         -6.45

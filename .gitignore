@@ -1,0 +1,16 @@
+# raw datasets too large for git (see README > Data)
+data/raw/azure/
+data/raw/weather/
+*.parquet
+# python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# scratch
+*.tmp
